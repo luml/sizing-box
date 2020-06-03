@@ -19,3 +19,20 @@ body {
     background: lightcoral;
     align-self: 2 / 1;
 }
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 20% 30% auto;
+}
+.grid-box > div {
+    margin: 1rem;
+    background: lightblue;
+    padding: 1rem;
+}
+
+.grid-child:nth-of-type(1) {
+    margin-left: 0;
+}
+.grid-child:nth-of-type(3) {
+    margin-right: 0;
+}
